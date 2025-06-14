@@ -52,7 +52,7 @@ export default function Experience() {
                 <p className="text-sm text-gray-500 dark:text-gray-500">{exp.period}</p>
               </div>
               <div className="md:w-2/3">
-                <p>{exp.description}</p>
+                <p className="text-gray-700 dark:text-gray-300">{exp.description}</p>
               </div>
             </motion.div>
           ))}

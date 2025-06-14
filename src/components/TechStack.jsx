@@ -1,4 +1,3 @@
-// components/TechStack.jsx
 'use client';
 
 import { motion } from 'framer-motion';
@@ -12,30 +11,30 @@ import { SiNextdotjs, SiTailwindcss, SiDjango } from 'react-icons/si';
 
 export default function TechStack() {
   const frontend = [
-    { icon: <FaHtml5 size={40} />, name: 'HTML5' },
-    { icon: <FaCss3Alt size={40} />, name: 'CSS3' },
-    { icon: <FaJs size={40} />, name: 'JavaScript' },
-    { icon: <FaReact size={40} />, name: 'React' },
-    { icon: <SiNextdotjs size={40} />, name: 'Next.js' },
-    { icon: <SiTailwindcss size={40} />, name: 'Tailwind CSS' },
-    { icon: <FaBootstrap size={40} />, name: 'Bootstrap' },
+    { icon: <FaHtml5 size={40} className="text-[#E44D26]" />, name: 'HTML5' },
+    { icon: <FaCss3Alt size={40} className="text-[#1572B6]" />, name: 'CSS3' },
+    { icon: <FaJs size={40} className="text-[#F7DF1E]" />, name: 'JavaScript' },
+    { icon: <FaReact size={40} className="text-[#61DAFB]" />, name: 'React' },
+    { icon: <SiNextdotjs size={40} className="text-black dark:text-white" />, name: 'Next.js' },
+    { icon: <SiTailwindcss size={40} className="text-[#38B2AC]" />, name: 'Tailwind CSS' },
+    { icon: <FaBootstrap size={40} className="text-[#7952B3]" />, name: 'Bootstrap' },
   ];
 
   const backend = [
-    { icon: <FaNodeJs size={40} />, name: 'Node.js' },
-    { icon: <FaPython size={40} />, name: 'Python' },
-    { icon: <SiDjango size={40} />, name: 'Django' },
-    { icon: <FaPhp size={40} />, name: 'PHP' },
-    { icon: <FaWordpress size={40} />, name: 'WordPress' },
-    { icon: <FaGit size={40} />, name: 'Git' },
-    { icon: <FaGithub size={40} />, name: 'GitHub' },
+    { icon: <FaNodeJs size={40} className="text-[#339933]" />, name: 'Node.js' },
+    { icon: <FaPython size={40} className="text-[#3776AB]" />, name: 'Python' },
+    { icon: <SiDjango size={40} className="text-[#092E20]" />, name: 'Django' },
+    { icon: <FaPhp size={40} className="text-[#777BB4]" />, name: 'PHP' },
+    { icon: <FaWordpress size={40} className="text-[#21759B]" />, name: 'WordPress' },
+    { icon: <FaGit size={40} className="text-[#F05032]" />, name: 'Git' },
+    { icon: <FaGithub size={40} className="text-black dark:text-white" />, name: 'GitHub' },
   ];
 
   return (
-    <section id="techstack" className="py-20">
+    <section id="techstack" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
       <div className="section-container">
         <SectionHeader title="Tech Stack" />
-        
+
         <div className="space-y-16">
           {/* Frontend */}
           <div>
@@ -44,11 +43,11 @@ export default function TechStack() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-2xl font-semibold mb-8"
+              className="text-2xl font-semibold mb-8 text-gray-800 dark:text-gray-100"
             >
               Frontend
             </motion.h3>
-            
+
             <motion.div
               variants={staggerContainer(0.05, 0.1)}
               initial="hidden"
@@ -63,13 +62,13 @@ export default function TechStack() {
                   className="flex flex-col items-center"
                   whileHover={{ y: -5, transition: { duration: 0.3 } }}
                 >
-                  <div className="text-[#FFD700] mb-2">{tech.icon}</div>
-                  <p className="text-center">{tech.name}</p>
+                  <div className="mb-2">{tech.icon}</div>
+                  <p className="text-center text-gray-800 dark:text-gray-300">{tech.name}</p>
                 </motion.div>
               ))}
             </motion.div>
           </div>
-          
+
           {/* Backend */}
           <div>
             <motion.h3
@@ -77,11 +76,11 @@ export default function TechStack() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-2xl font-semibold mb-8"
+              className="text-2xl font-semibold mb-8 text-gray-800 dark:text-gray-100"
             >
               Backend
             </motion.h3>
-            
+
             <motion.div
               variants={staggerContainer(0.05, 0.1)}
               initial="hidden"
@@ -96,8 +95,8 @@ export default function TechStack() {
                   className="flex flex-col items-center"
                   whileHover={{ y: -5, transition: { duration: 0.3 } }}
                 >
-                  <div className="text-[#FFD700] mb-2">{tech.icon}</div>
-                  <p className="text-center">{tech.name}</p>
+                  <div className="mb-2">{tech.icon}</div>
+                  <p className="text-center text-gray-800 dark:text-gray-300">{tech.name}</p>
                 </motion.div>
               ))}
             </motion.div>
