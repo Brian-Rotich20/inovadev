@@ -10,14 +10,14 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiDjango, SiMongodb } from 'react-icons/si';
 import { FaPhp, FaHtml5, FaCss3Alt, FaJs, FaBootstrap } from "react-icons/fa";
+import { SiWoocommerce, SiElementor } from 'react-icons/si';
 export default function Projects() {
   const projects = [
     {
       title: 'E-commerce Platform',
-      description: 'A full-featured e-commerce site with product catalog, cart, checkout, and admin dashboard.',
-      image: '/project1.jpg',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      description: 'A full-featured e-commerce site with product catalog, cart, checkout, and admin dashboard. Currently in progress',
+      image: '/ecommerce.jpeg',
+      github: 'https://github.com/Brian-Rotich20/Django-Shop-With-RF',
       tech: [<FaReact key="react" />, <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, <SiMongodb key="mongodb" />]
     },
     {
@@ -25,40 +25,38 @@ export default function Projects() {
       description: 'A collaborative inventory management application with real-time updates and team features.',
       image: '/inventory.png',
       github: 'https://github.com/Brian-Rotich20/Sales-Inventory-System',
-      live: 'https://example.com',
      tech: [<FaPhp key="php" />, <FaHtml5 key="html" />, <FaCss3Alt key="css" />, <FaJs key="js" />, <FaBootstrap key="bootstrap" />]
     },
     {
       title: 'Personal Blog',
-      description: 'A blog built with Django featuring dark mode, tags, categories, and a markdown editor.',
-      image: '/project3.jpg',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      description: 'A blog built with Django featuring dark mode, tags, categories,pagination and a markdown editor.Also still in progress',
+      image: '/blog.jpeg',
+      github: 'https://github.com/Brian-Rotich20/django-blog',
+      live: '/',
       tech: [<SiDjango key="django" />, <SiTailwindcss key="tailwind" />]
     },
     {
       title: 'Portfolio Website',
-      description: 'A portfolio site for a Kenyan graphics designer',
-      image: '/project4.jpg',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      description: 'A clean, responsive portfolio website designed to showcase a rich collection of graphic designs crafted in Kenya',
+      image: '/lyrebird.png',
+      github: 'https://github.com/Brian-Rotich20/lyrebird-graphics',
+      live: 'https://lyrebird-graphics.netlify.app/',
+      tech: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />, <FaJs key="js" />]
+    },
+     {
+      title: 'Travel Site',
+      description: 'A system for managing restaurant reservations, tables, and customer information.',
+      image: '/travel.png',
+      github: 'https://github.com/Brian-Rotich20/Travel-Website',
+      live: 'https://inovatravels.netlify.app/',
       tech: [<FaReact key="react" />, <SiDjango key="django" />]
     },
      {
-      title: 'Restaurant Reservation System',
+      title: 'Ecommerce Website',
       description: 'A system for managing restaurant reservations, tables, and customer information.',
-      image: '/project4.jpg',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      tech: [<FaReact key="react" />, <SiDjango key="django" />]
-    },
-     {
-      title: 'Restaurant Reservation System',
-      description: 'A system for managing restaurant reservations, tables, and customer information.',
-      image: '/project4.jpg',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      tech: [<FaReact key="react" />, <SiDjango key="django" />]
+      image: '/facols.png',
+      live: 'https://facols.com',
+     tech: [<SiWoocommerce key="woocommerce" />, <SiElementor key="elementor" />]
     },
   ];
 
