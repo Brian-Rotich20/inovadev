@@ -47,10 +47,10 @@ export default function Contact() {
             </p>
 
             <div className="space-y-4">
-              <ContactItem icon={<FiMail />} text="contact@example.com" link="mailto:contact@example.com" />
-              <ContactItem icon={<FiGithub />} text="github.com/johndoe" link="https://github.com" />
-              <ContactItem icon={<FiLinkedin />} text="linkedin.com/in/johndoe" link="https://linkedin.com" />
-              <ContactItem icon={<FiTwitter />} text="@johndoe" link="https://twitter.com" />
+              <ContactItem icon={<FiMail />} text="ralphrotich@gmail.com" link="mailto:ralphrotich@gmail.com" />
+              <ContactItem icon={<FiGithub />} text="Brian-Rotich20" link="https://github.com/Brian-Rotich20" />
+              <ContactItem icon={<FiLinkedin />} text="Brian Rotich" link="https://linkedin.com/in/brian-rotich-11150a2a9" />
+              <ContactItem icon={<FiTwitter />} text="@rotichbrayoo" link="https://x.com/rotichbrayoo" />
             </div>
           </motion.div>
 

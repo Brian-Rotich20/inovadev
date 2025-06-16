@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from '@/lib/animations';
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <section id="hero" className="min-h-screen py-6 flex items-center relative overflow-hidden bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       <div className="hero-glow"></div>
       <div className="section-container">
         <motion.div
@@ -48,13 +48,13 @@ export default function Hero() {
             </p>
             
             <div className="flex justify-center md:justify-start space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors">
+              <a href="https://github.com/Brian-Rotich20" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors">
                 <FiGithub />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors">
+              <a href="https://linkedin.com/in/brian-rotich-11150a2a9" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors">
                 <FiLinkedin />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors">
+              <a href="https://x.com/rotichbrayoo" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors">
                 <FiTwitter />
               </a>
             </div>

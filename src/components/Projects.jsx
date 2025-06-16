@@ -37,6 +37,22 @@ export default function Projects() {
       tech: [<SiDjango key="django" />, <SiTailwindcss key="tailwind" />]
     },
     {
+      title: 'Portfolio Website',
+      description: 'A portfolio site for a Kenyan graphics designer',
+      image: '/project4.jpg',
+      github: 'https://github.com',
+      live: 'https://example.com',
+      tech: [<FaReact key="react" />, <SiDjango key="django" />]
+    },
+     {
+      title: 'Restaurant Reservation System',
+      description: 'A system for managing restaurant reservations, tables, and customer information.',
+      image: '/project4.jpg',
+      github: 'https://github.com',
+      live: 'https://example.com',
+      tech: [<FaReact key="react" />, <SiDjango key="django" />]
+    },
+     {
       title: 'Restaurant Reservation System',
       description: 'A system for managing restaurant reservations, tables, and customer information.',
       image: '/project4.jpg',
@@ -47,7 +63,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="section-container">
         <SectionHeader title="Projects" />
         

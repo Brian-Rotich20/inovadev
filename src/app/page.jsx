@@ -48,7 +48,6 @@ export default function Home() {
   return (
     <main className="relative">
       <NavBar />
-      <div className="ml-0 md:ml-16">
         <ThemeToggle />
         <Hero />
         <About />
@@ -56,7 +55,6 @@ export default function Home() {
         <TechStack />
         <Projects />
         <Contact />
-      </div>
     </main>
   );
 }

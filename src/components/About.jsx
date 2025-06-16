@@ -18,7 +18,7 @@ export default function About() {
           className="max-w-2xl"
         >
           <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
-            Hi there! I'm a full-stack developer with over 5 years of experience building 
+            Hi there! I'm a full-stack developer with over 2 years of experience building 
             web applications that are both beautiful and functional. My journey in web development 
             started when I built my first website at the age of 16, and I've been hooked ever since.
           </p>

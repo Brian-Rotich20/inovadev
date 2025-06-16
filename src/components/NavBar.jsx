@@ -49,15 +49,15 @@ export default function NavBar() {
         h-16 w-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg
         shadow-2xl rounded-2xl border border-gray-200/50 dark:border-gray-700/50
         /* Desktop: Side navigation */
-        md:top-8 md:left-4 md:bottom-auto md:right-auto 
-        md:h-auto md:w-16 md:rounded-3xl md:py-6
+       md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 md:right-auto 
+        md:h-16 md:w-auto md:rounded-2xl md:py-0
       " 
     > 
       <ul className="
         /* Mobile: Horizontal layout */
         flex flex-row justify-center items-center h-full px-2
         /* Desktop: Vertical layout */
-        md:flex-col md:justify-start md:items-center md:space-y-3 md:px-0
+           md:flex-row md:justify-center md:items-center md:space-y-0 md:px-6 md:space-x-3
       "> 
         {navItems.map((item, index) => {
           const isActive = activeSection === item.id;

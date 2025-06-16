@@ -29,7 +29,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="section-container">
         <SectionHeader title="Experience" />
         
