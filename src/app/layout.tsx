@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "My Portfolio",
   description: "Modern and Minimalist Portfolio",
 };
+
 const greatVibes = Great_Vibes({
   weight: '400',
   subsets: ['latin'],
