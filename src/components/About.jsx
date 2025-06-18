@@ -23,13 +23,13 @@ export default function About() {
             web applications that are both beautiful and functional. I help you building softwares that solve real-world problems,
           </p>
           <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
-            I am aiming to specialise in  <span className="highlight">JavaScript</span> ecosystems, particularly 
+            I to specialise in <span className="highlight">JavaScript 🚀</span> ecosystems, particularly 
             React and Next.js for front-end development, and Node.js or Django for back-end work. 
             I'm passionate about clean code, performance optimization, and creating intuitive user experiences.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            When I'm not coding, you can find me hiking, reading science fiction, or experimenting 
-            with new technologies to stay at the cutting edge of web development.
+           With new technologies to stay at the cutting edge of web development. When I'm not coding, you'll find me 🧑‍💻 
+           hanging with friends 👯, reading articles 📖, and attending tech events 💡🎤.
           </p>
         </motion.div>
       </div>
