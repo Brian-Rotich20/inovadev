@@ -9,28 +9,23 @@ import { fadeIn, staggerContainer } from '@/lib/animations';
 export default function Experience() {
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      period: '2022 - Present',
-      description: 'Lead developer for multiple high-traffic web applications, mentoring junior developers, and implementing new technologies to improve performance and user experience.',
+      title: 'Full-stack Developer',
+      company: 'Inova Softwares',
+      period: '2023 - present',
+      description: 'Inova softwares is a leading growing company responsible for developing, maintaining softwares for their client',
     },
     {
-      title: 'Frontend Developer',
-      company: 'Creative Agency',
-      period: '2019 - 2022',
-      description: 'Developed responsive websites and web applications for various clients using React, Next.js, and other modern web technologies.',
-    },
-    {
-      title: 'Junior Web Developer',
-      company: 'Startup Studio',
-      period: '2017 - 2019',
-      description: 'Collaborated with designers and backend developers to build user interfaces for startup products.',
+      title: ' Web Developer',
+      company: 'Facols company',
+      period: '2024 - 2025',
+      description: 'I was responsible for developing an e-commerce website.I act also in maintaining and updating the websites',
     },
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="experience" className="bg-gray-50 dark:bg-gray-900">
       <div className="section-container">
+         <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8 shadow-sm">
         <SectionHeader title="Experience" />
         
         <motion.div
@@ -57,6 +52,7 @@ export default function Experience() {
             </motion.div>
           ))}
         </motion.div>
+      </div>
       </div>
     </section>
   );

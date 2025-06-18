@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+    <section id="contact" className=" bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
       <div className="section-container">
         <SectionHeader title="Contact Me" />
 

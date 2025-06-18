@@ -61,8 +61,9 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="bg-gray-50 dark:bg-gray-900">
       <div className="section-container">
+         <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8 shadow-sm">
         <SectionHeader title="Projects" />
         
         <motion.div
@@ -113,6 +114,7 @@ export default function Projects() {
             </motion.div>
           ))}
         </motion.div>
+      </div>
       </div>
     </section>
   );

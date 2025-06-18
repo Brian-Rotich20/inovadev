@@ -6,8 +6,9 @@ import { fadeIn } from '@/lib/animations';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
+    <section id="about" className=" bg-white dark:bg-gray-900 transition-colors duration-500">
       <div className="section-container">
+         <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8 shadow-sm">
         <SectionHeader title="About Me" />
         
         <motion.div
@@ -18,12 +19,11 @@ export default function About() {
           className="max-w-2xl"
         >
           <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
-            Hi there! I'm a full-stack developer with over 2 years of experience building 
-            web applications that are both beautiful and functional. My journey in web development 
-            started when I built my first website at the age of 16, and I've been hooked ever since.
+            Hi!👋🏻 I'm a full-stack developer with over 2 years of experience building 
+            web applications that are both beautiful and functional. I help you building softwares that solve real-world problems,
           </p>
           <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
-            I specialize in <span className="highlight">JavaScript</span> ecosystems, particularly 
+            I am aiming to specialise in  <span className="highlight">JavaScript</span> ecosystems, particularly 
             React and Next.js for front-end development, and Node.js or Django for back-end work. 
             I'm passionate about clean code, performance optimization, and creating intuitive user experiences.
           </p>
@@ -32,6 +32,7 @@ export default function About() {
             with new technologies to stay at the cutting edge of web development.
           </p>
         </motion.div>
+      </div>
       </div>
     </section>
   );
