@@ -7,7 +7,7 @@ import { fadeIn } from '@/lib/animations';
 import { FiMail, FiGithub, FiLinkedin, FiTwitter, FiDownload, FiCopy, FiCheck, FiPhone } from 'react-icons/fi';
 import { SiWhatsapp } from 'react-icons/si';
 
-export default function Footer() {
+export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = async () => {

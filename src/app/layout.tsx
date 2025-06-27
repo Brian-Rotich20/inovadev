@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "My Portfolio||Software Engineer",
   description: "Brian Rotich's Portfolio - Junior Software Engineer||Full Stack Developer",
   keywords: [
     "Brian Rotich",
