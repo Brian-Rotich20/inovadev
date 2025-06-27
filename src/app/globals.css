@@ -47,6 +47,9 @@ section {
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24;
   }
+  .social-icons {
+    @apply text-xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800
+  }
   
   .highlight {
     @apply text-[#FFD700] dark:text-[#FFD700];

@@ -20,7 +20,7 @@ export default function About() {
         >
           <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
             Hi!👋🏻 I'm a full-stack developer with over 2 years of experience building 
-            web applications that are both beautiful and functional. I help you building softwares that solve real-world problems,
+            web applications that are both beautiful and functional. I help you building softwares that solve real-world problems.
           </p>
           <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
             I to specialise in <span className="highlight">JavaScript 🚀</span> ecosystems, particularly 

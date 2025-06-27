@@ -12,13 +12,13 @@ export default function Experience() {
       title: 'Full-stack Developer',
       company: 'Inova Softwares',
       period: '2023 - present',
-      description: 'Inova softwares is a leading growing company responsible for developing, maintaining softwares for their client',
+      description: 'Inova softwares is a leading growing company responsible for developing, maintaining softwares for their client.',
     },
     {
       title: ' Web Developer',
       company: 'Facols company',
       period: '2024 - 2025',
-      description: 'I was responsible for developing an e-commerce website.I act also in maintaining and updating the websites',
+      description: 'I was responsible for developing an e-commerce website.I act also in maintaining and updating the websites.',
     },
   ];
 

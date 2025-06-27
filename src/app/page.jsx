@@ -56,5 +56,5 @@ export default function Home() {
         <Projects />
         <Contact />
     </main>
-  );
+  )
 }

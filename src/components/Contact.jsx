@@ -6,6 +6,7 @@ import SectionHeader from './SectionHeader';
 import { fadeIn } from '@/lib/animations';
 import { FiMail, FiGithub, FiLinkedin, FiTwitter, FiDownload, FiCopy, FiCheck, FiPhone } from 'react-icons/fi';
 import { SiWhatsapp } from 'react-icons/si';
+
 export default function Footer() {
   const [copied, setCopied] = useState(false);
 
@@ -157,10 +158,10 @@ export default function Footer() {
                 Projects
               </a>
               <a 
-                href="#skills" 
+                href="#techstack" 
                 className="text-gray-600 dark:text-gray-400 hover:text-[#FFD700] transition-colors"
               >
-                Skills
+                Techstacks
               </a>
             </div>
           </div>

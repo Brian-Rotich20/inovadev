@@ -112,7 +112,7 @@ export default function Hero() {
               className="text-center space-y-6"
             >
               {/* Profile Picture */}
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mx-auto border-2 border-[#FFD700]">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mx-auto">
                 <Image
                   src="/profile1.png"
                   alt="Brian Rotich"
@@ -122,8 +122,7 @@ export default function Hero() {
                   priority
                 />
               </div>
-              
-              {/* Name and Title */}
+        
               <div>
                 <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-900 dark:text-gray-100">
                   Brian Rotich
@@ -133,19 +132,17 @@ export default function Hero() {
                 </h2>
               </div>
               
-              {/* Description */}
               <p className="text-sm sm:text-base max-w-sm mx-auto text-gray-700 dark:text-gray-300 leading-relaxed px-4">
                 I help you build high-performance software applications with scalable architectures 
                 and secure APIs.
               </p>
-              
-              {/* Social Icons */}
-              <div className="flex justify-center space-x-4">
+            
+            <div className="flex justify-center space-x-4"> {/* Social icons */}
                 <a 
                   href="https://github.com/Brian-Rotich20" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+                  className="social-icons"
                   aria-label="GitHub Profile"
                 >
                   <FiGithub />
@@ -154,7 +151,7 @@ export default function Hero() {
                   href="https://linkedin.com/in/brian-rotich-11150a2a9" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+                  className="social-icons"
                   aria-label="LinkedIn Profile"
                 >
                   <FiLinkedin />
@@ -163,7 +160,7 @@ export default function Hero() {
                   href="https://x.com/rotichbrayoo" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-xl text-gray-800 dark:text-gray-200 hover:text-[#FFD700] dark:hover:text-yellow-400 transition-colors p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+                  className="social-icons"
                   aria-label="Twitter Profile"
                 >
                   <FiTwitter />

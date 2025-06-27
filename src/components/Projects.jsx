@@ -8,7 +8,7 @@ import SectionHeader from './SectionHeader';
 import { fadeIn, staggerContainer } from '@/lib/animations';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiDjango, SiMongodb } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiDjango, SiPostgresql} from 'react-icons/si';
 import { FaPhp, FaHtml5, FaCss3Alt, FaJs, FaBootstrap } from "react-icons/fa";
 import { SiWoocommerce, SiElementor } from 'react-icons/si';
 export default function Projects() {
@@ -18,7 +18,7 @@ export default function Projects() {
       description: 'A full-featured e-commerce site with product catalog, cart, checkout, and admin dashboard. Currently in progress',
       image: '/ecommerce.jpeg',
       github: 'https://github.com/Brian-Rotich20/Django-Shop-With-RF',
-      tech: [<FaReact key="react" />, <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, <SiMongodb key="mongodb" />]
+      tech: [<FaReact key="react" />, <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, <SiPostgresql key="postgresql"/>]
     },
     {
       title: 'Inventory Management System App',
@@ -45,7 +45,7 @@ export default function Projects() {
     },
      {
       title: 'Travel Site',
-      description: 'A system for managing restaurant reservations, tables, and customer information.',
+      description: 'A travelling website, people in Kenya can book for places, view where travel and access the prices',
       image: '/travel.png',
       github: 'https://github.com/Brian-Rotich20/Travel-Website',
       live: 'https://inovatravels.netlify.app/',
@@ -53,7 +53,7 @@ export default function Projects() {
     },
      {
       title: 'Ecommerce Website',
-      description: 'A system for managing restaurant reservations, tables, and customer information.',
+      description: 'An electrical website that deals with modern electrical accessories.',
       image: '/facols.png',
       live: 'https://facols.com',
      tech: [<SiWoocommerce key="woocommerce" />, <SiElementor key="elementor" />]
@@ -80,12 +80,13 @@ export default function Projects() {
               className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg"
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
-              <div className="relative h-48">
+              <div className="relative h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover"
+                    sizes="100vw"
                 />
               </div>
               <div className="p-6">
