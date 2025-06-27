@@ -15,7 +15,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'E-commerce Platform',
-      description: 'A full-featured e-commerce site with product catalog, cart, checkout, and admin dashboard. Currently in progress',
+      description: 'A full-featured e-commerce shop with product catalog, cart, checkout. Currently in progress. ',
       image: '/ecommerce.jpeg',
       github: 'https://github.com/Brian-Rotich20/Django-Shop-With-RF',
       tech: [<FaReact key="react" />, <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, <SiPostgresql key="postgresql"/>]
@@ -85,7 +85,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-contain sm:object-cover"
                     sizes="100vw"
                 />
               </div>
