@@ -23,8 +23,8 @@ export default function Contact() {
   const downloadCV = () => {
     // Replace with your actual CV file path
     const link = document.createElement('a');
-    link.href = '/path-to-your-cv.pdf';
-    link.download = 'Brian_Rotich_CV.pdf';
+    link.href = '/Brian-Rotich-Junior Software Engineer-Professional CV Resume_1.pdf';
+    link.download = 'Brian-Rotich-Junior Software Engineer-Professional CV Resume_1.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
