@@ -21,7 +21,6 @@ export default function Contact() {
   };
 
   const downloadCV = () => {
-    // Replace with your actual CV file path
     const link = document.createElement('a');
     link.href = '/Brian-Rotich-Junior Software Engineer-Professional CV Resume_1.pdf';
     link.download = 'Brian-Rotich-Junior Software Engineer-Professional CV Resume_1.pdf';
@@ -31,6 +30,7 @@ export default function Contact() {
   };
 
   return (
+    <section id="contact" className='mt-0 pt-0' >
     <footer className="bg-gray-50 dark:bg-gray-900 transition-colors duration-500 border-t border-gray-200 dark:border-gray-800">
       <div className="section-container py-16">
         <motion.div
@@ -168,6 +168,7 @@ export default function Contact() {
         </motion.div>
       </div>
     </footer>
+    </section>
   );
 }
 
