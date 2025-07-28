@@ -88,6 +88,40 @@ const IdeaIllustration = () => {
   );
 };
 
+// Ray.so Code Screenshot Component
+const RayCodeImage = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8, y: 30 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
+      className="w-full flex justify-center"
+    >
+      <div className="relative group max-w-fit">
+        {/* Subtle glow effect */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        
+        {/* Ray image container */}
+        <div className="relative bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm rounded-xl p-3 border border-white/20 dark:border-gray-700/30 shadow-2xl">
+          <Image
+            src="/rayimage2.png"
+            alt="Code snippet showcase - showcasing clean, readable code structure"
+            width={300}
+            height={250}
+            className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+            priority={false}
+          />
+          
+          {/* Floating badge */}
+          <div className="absolute -top-3 -right-3 bg-[#FFD700] text-gray-900 text-sm font-semibold px-3 py-1.5 rounded-full shadow-lg">
+            Hey 👋🏻
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 export default function Hero() {
   return (
     <section id="hero" className="min-h-screen py-4 sm:py-6 md:py-8 flex items-center relative overflow-hidden bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
@@ -95,6 +129,8 @@ export default function Hero() {
       
       {/* Idea Illustration */}
       <IdeaIllustration />
+      
+
       
       <div className="section-container">
         <motion.div
@@ -168,22 +204,26 @@ export default function Hero() {
               </div>
               
               {/* CTA Buttons */}
-              <div className="flex flex-col gap-3 px-4">
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center justify-center gap-2 px-6 py-3 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl w-full"
-                >
-                  <FiMail className="text-lg" />
-                  Contact Me
-                </button>
-                <button 
-                  onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors w-full"
-                >
-                  <FiFolder className="text-lg" />
-                  View Projects
-                </button>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-2 px-4">
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-2.5 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl text-sm"
+            >
+              <FiMail className="text-base" />
+              Contact Me
+            </button>
+            <button 
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-2.5 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors text-sm"
+            >
+              <FiFolder className="text-base" />
+              View Projects
+            </button>
+          </div>
+
+              
+              {/* Ray Code Image */}
+              <RayCodeImage />
             </motion.div>
           </div>
 
@@ -254,21 +294,43 @@ export default function Hero() {
               </div>
               
               {/* CTA Buttons */}
-              <div className="flex justify-center gap-4">
+<div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 px-4">
+  <button 
+    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+    className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl w-full text-sm"
+  >
+    <FiMail className="text-base" />
+    Contact Me
+  </button>
+  <button 
+    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+    className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors w-full text-sm"
+  >
+    <FiFolder className="text-base" />
+    View Projects
+              </button>
+            </div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 px-4">
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center gap-2 px-8 py-4 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl"
+                  className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl w-full text-sm"
                 >
-                  <FiMail className="text-lg" />
+                  <FiMail className="text-base" />
                   Contact Me
                 </button>
                 <button 
                   onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center gap-2 px-8 py-4 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors"
+                  className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors w-full text-sm"
                 >
-                  <FiFolder className="text-lg" />
+                  <FiFolder className="text-base" />
                   View Projects
                 </button>
+              </div>
+
+              
+              {/* Ray Code Image */}
+              <div className="flex justify-center">
+                <RayCodeImage />
               </div>
             </motion.div>
           </div>
@@ -346,22 +408,25 @@ export default function Hero() {
               </div>
               
               {/* CTA Buttons */}
-              <div className="flex flex-col xl:flex-row gap-4">
+              <div className="flex flex-col xl:flex-row gap-3">
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center gap-2 px-8 py-4 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl"
+                  className="flex items-center gap-2 px-6 py-3 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl text-sm"
                 >
-                  <FiMail className="text-lg" />
+                  <FiMail className="text-base" />
                   Contact Me
                 </button>
                 <button 
                   onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center gap-2 px-8 py-4 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors"
+                  className="flex items-center gap-2 px-6 py-3 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors text-sm"
                 >
-                  <FiFolder className="text-lg" />
+                  <FiFolder className="text-base" />
                   View Projects
                 </button>
               </div>
+              
+              {/* Ray Code Image */}
+              <RayCodeImage />
             </motion.div>
           </div>
         </motion.div>
