@@ -204,22 +204,23 @@ export default function Hero() {
               </div>
               
               {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-2 px-4">
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-2.5 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl text-sm"
-            >
-              <FiMail className="text-base" />
-              Contact Me
-            </button>
-            <button 
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="flex-1 flex items-center justify-center gap-2 px-5 py-2.5 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors text-sm"
-            >
-              <FiFolder className="text-base" />
-              View Projects
-            </button>
-          </div>
+<div className="flex gap-2 w-full max-w-md mx-auto mt-6 px-4">
+  <button 
+    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+    className="flex-1 flex items-center justify-center gap-1 px-2.5 py-1.5 sm:px-4 sm:py-2 bg-[#FFD700] text-gray-900 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500 transition shadow"
+  >
+    <FiMail className="text-sm sm:text-base" />
+    Contact Me
+  </button>
+  <button 
+    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+    className="flex-1 flex items-center justify-center gap-1 px-2.5 py-1.5 sm:px-4 sm:py-2 border border-[#FFD700] text-[#FFD700] text-xs sm:text-sm font-medium rounded-md hover:bg-[#FFD700] hover:text-gray-900 transition"
+  >
+    <FiFolder className="text-sm sm:text-base" />
+    View Projects
+  </button>
+</div>
+
 
               
               {/* Ray Code Image */}
@@ -293,41 +294,7 @@ export default function Hero() {
                 </a>
               </div>
               
-              {/* CTA Buttons */}
-<div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 px-4">
-  <button 
-    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-    className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl w-full text-sm"
-  >
-    <FiMail className="text-base" />
-    Contact Me
-  </button>
-  <button 
-    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-    className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors w-full text-sm"
-  >
-    <FiFolder className="text-base" />
-    View Projects
-              </button>
-            </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 px-4">
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl w-full text-sm"
-                >
-                  <FiMail className="text-base" />
-                  Contact Me
-                </button>
-                <button 
-                  onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="sm:w-1/2 flex items-center justify-center gap-2 px-5 py-2.5 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors w-full text-sm"
-                >
-                  <FiFolder className="text-base" />
-                  View Projects
-                </button>
-              </div>
-
-              
+        
               {/* Ray Code Image */}
               <div className="flex justify-center">
                 <RayCodeImage />
@@ -406,24 +373,7 @@ export default function Hero() {
                   <FiTwitter />
                 </a>
               </div>
-              
-              {/* CTA Buttons */}
-              <div className="flex flex-col xl:flex-row gap-3">
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center gap-2 px-6 py-3 bg-[#FFD700] text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors shadow-lg hover:shadow-xl text-sm"
-                >
-                  <FiMail className="text-base" />
-                  Contact Me
-                </button>
-                <button 
-                  onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="flex items-center gap-2 px-6 py-3 border-2 border-[#FFD700] text-[#FFD700] font-medium rounded-lg hover:bg-[#FFD700] hover:text-gray-900 transition-colors text-sm"
-                >
-                  <FiFolder className="text-base" />
-                  View Projects
-                </button>
-              </div>
+
               
               {/* Ray Code Image */}
               <RayCodeImage />

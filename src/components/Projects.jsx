@@ -18,6 +18,7 @@ export default function Projects() {
       description: 'A full-featured e-commerce shop with product catalog, cart, checkout. Currently in progress. ',
       image: '/ecommerce.jpeg',
       github: 'https://github.com/Brian-Rotich20/Django-Shop-With-RF',
+      live: 'https://frontend-shop-xi.vercel.app',
       tech: [<FaReact key="react" />, <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, <SiPostgresql key="postgresql"/>]
     },
     {
