@@ -15,11 +15,11 @@ export default function Projects() {
   const projects = [
     {
       title: 'E-commerce Platform',
-      description: 'A full-featured e-commerce shop with product catalog, cart, checkout. Currently in progress. ',
-      image: '/ecommerce.jpeg',
+      description: 'A modern full-featured e-commerce shop with product catalog, cart, checkout. Supporting different payment gateways',
+      image: '/shop2.png',
       github: 'https://github.com/Brian-Rotich20/Django-Shop-With-RF',
       live: 'https://frontend-shop-xi.vercel.app',
-      tech: [<FaReact key="react" />, <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, <SiPostgresql key="postgresql"/>]
+      tech: [<FaReact key="react" />, <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, <SiDjango key="django" />, <SiPostgresql key="postgresql"/>]
     },
     {
       title: 'Inventory Management System App',

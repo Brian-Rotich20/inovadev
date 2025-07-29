@@ -106,8 +106,8 @@ const RayCodeImage = () => {
           <Image
             src="/rayimage2.png"
             alt="Code snippet showcase - showcasing clean, readable code structure"
-            width={300}
-            height={250}
+            width={330}
+            height={275}
             className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
             priority={false}
           />
@@ -204,25 +204,23 @@ export default function Hero() {
               </div>
               
               {/* CTA Buttons */}
-<div className="flex gap-2 w-full max-w-md mx-auto mt-6 px-4">
-  <button 
-    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-    className="flex-1 flex items-center justify-center gap-1 px-2.5 py-1.5 sm:px-4 sm:py-2 bg-[#FFD700] text-gray-900 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500 transition shadow"
-  >
-    <FiMail className="text-sm sm:text-base" />
-    Contact Me
-  </button>
-  <button 
-    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-    className="flex-1 flex items-center justify-center gap-1 px-2.5 py-1.5 sm:px-4 sm:py-2 border border-[#FFD700] text-[#FFD700] text-xs sm:text-sm font-medium rounded-md hover:bg-[#FFD700] hover:text-gray-900 transition"
-  >
-    <FiFolder className="text-sm sm:text-base" />
-    View Projects
-  </button>
-</div>
+              <div className="flex gap-2 w-full max-w-md mx-auto mt-6 px-4">
+                <button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="flex-1 flex items-center justify-center gap-1 px-2.5 py-1.5 sm:px-4 sm:py-2 bg-[#FFD700] text-gray-900 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500 transition shadow"
+                >
+                  <FiMail className="text-sm sm:text-base" />
+                  Contact Me
+                </button>
+                <button 
+                  onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="flex-1 flex items-center justify-center gap-1 px-2.5 py-1.5 sm:px-4 sm:py-2 border border-[#FFD700] text-[#FFD700] text-xs sm:text-sm font-medium rounded-md hover:bg-[#FFD700] hover:text-gray-900 transition"
+                >
+                  <FiFolder className="text-sm sm:text-base" />
+                  View Projects
+                </button>
+              </div>
 
-
-              
               {/* Ray Code Image */}
               <RayCodeImage />
             </motion.div>
